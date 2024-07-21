@@ -1,0 +1,42 @@
+make a rull in outbind with this property
+{
+action:allow
+program all
+protocol and port: icmpv4
+scop: any ip, any ip
+advanced profile all check
+}
+
+windows log security
+
+event id: 5157 for outbounf ==> application name: :)
+5156
+
+
+netsh advfirewall set allprofiles firewallpolicy blockinbound,blockoutbound
+
+auditpol /set /subcategory:"{0CCE9226-69AE-11D9-BED3-505054503030}" /success:enable /failure:enable
+
+
+https://learn.microsoft.com/en-us/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/event-5157
+https://learn.microsoft.com/en-us/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/event-5156
+
+
+
+Service	Protocol Number
+Internet Control Message Protocol (ICMP)	1
+Transmission Control Protocol (TCP)	6
+User Datagram Protocol (UDP)	17
+General Routing Encapsulation (PPTP data over GRE)	47
+Authentication Header (AH) IPSec	51
+Encapsulation Security Payload (ESP) IPSec	50
+Exterior Gateway Protocol (EGP)	8
+Gateway-Gateway Protocol (GGP)	3
+Host Monitoring Protocol (HMP)	20
+Internet Group Management Protocol (IGMP)	88
+MIT Remote Virtual Disk (RVD)	66
+OSPF Open Shortest Path First	89
+PARC Universal Packet Protocol (PUP)	12
+Reliable Datagram Protocol (RDP)	27
+Reservation Protocol (RSVP) QoS	46
+
